@@ -1,0 +1,25 @@
+
+* i3luastatus
+
+Statusbar for =i3bar=, used together with =i3status=.
+
+** Configs
+
+*** .config/i3/config
+:bar {
+:	status_command i3status | lua ~/.config/i3status/lua/wrapper.lua
+:}
+
+*** .config/i3status/config
+:general {
+:	output_format = "i3bar"
+:	colors = true
+:	interval = 1
+:}
+:
+:order += "time"
+:
+:time {
+:	format = " %Y-%m-%d %H:%M:%S "
+:}
+
