@@ -23,3 +23,9 @@ Statusbar for =i3bar=, used together with =i3status=. Currently prints load and 
 :	format = " %Y-%m-%d %H:%M:%S "
 :}
 
+** Librarys used
+
+*** jf-JSON
+  - Found here: http://regex.info/blog/lua/json
+  - According to: http://lua-users.org/wiki/JsonModules -- there's no license for this lib.
+
