@@ -1,7 +1,7 @@
 
 * i3luastatus
 
-Statusbar for =i3bar=, used together with =i3status=.
+Statusbar for =i3bar=, used together with =i3status=. Currently prints load and date.
 
 ** Configs
 
