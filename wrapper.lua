@@ -28,14 +28,18 @@ while true do
 	response = {
 		{
 			name      = "load",
-			full_text = io.lines('/proc/loadavg')()
-		}, {
+			full_text =  " " .. io.lines('/proc/loadavg')() .. " "
+		},
+		{
 			name      = "time",
-			full_text = os.date('%Y-%m-%d %H:%M:%S')
+			full_text = " " .. os.date('%Y-%m-%d %H:%M:%S') .. " "
 		}
 	}
 	
 	-- Respond!
 	i3respond(response)
+--	print(line)
+	
+	io.flush()
 end
 
